@@ -1,6 +1,11 @@
 # rust_incremental_bug_maybe
 Testing incremental rust build bug
 
+This bug seems to be a problem with static libs and incremental building. It
+seems to only affect builds with multiple files. For example, if we were to
+move the panic_fmt implementation into the lib.rs file, it would build just
+fine.
+
 ~~~
 C:\rust_incremental_bug_maybe>set CARGO_INCREMENTAL=
 
