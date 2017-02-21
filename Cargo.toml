@@ -1,0 +1,14 @@
+[package]
+name = "rusttest"
+version = "0.1.0"
+authors = ["gamozo <bfalk@gamozolabs.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.release]
+panic="abort"
+lto=true
+
+[dependencies]
+
